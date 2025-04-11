@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/фон.jpg);
+    background-image: url(../img/фон.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0%;
@@ -50,8 +50,7 @@ align-items: center;
 }
 .logo{
     text-align: left;
-    padding-top: 10px;
-    padding-bottom: 6px;
+   
     margin-right: 450px;
 }
 .logo img 
@@ -60,11 +59,6 @@ height: 80px;
 width: 80px;
 margin: 0 50px;
 position: relative;
-}
-.menu{
-display: flex;
-margin: auto;
-padding: 0%;
 }
 .section1{  
     padding-top: 300px;
@@ -180,7 +174,7 @@ padding: 0%;
     justify-content: center;
     margin: 0;
     gap: 10px; 
-    margin-top: 0;
+    margin-top: 100px;
 }
 .info-pink {
     color: rgb(216, 0, 126);
@@ -201,6 +195,14 @@ padding: 0%;
     padding-right: 10px;
     height: 535px;
     text-align: center; 
+    
+}
+
+.img1 img{
+  transition: transform 0.2s;
+}
+.img1 img:hover{
+  transform: scale(1.10);
 }
 .text-img1{
     padding-top: 15px;
@@ -225,6 +227,13 @@ padding: 0%;
     height: 535px;
     text-align: center;
 }
+
+.img2 img{
+  transition: transform 0.2s;
+}
+.img2 img:hover{
+  transform: scale(1.10);
+}
 .text-img2{
     padding-top: 15px;
     font-family: 'Jura';
@@ -247,6 +256,12 @@ padding: 0%;
     padding-right: 10px;
     height: 535px;
     text-align: center;
+}
+.img3 img{
+  transition: transform 0.2s;
+}
+.img3 img:hover{
+  transform: scale(1.10);
 }
 .text-img3{
     padding-top: 15px;
@@ -281,10 +296,11 @@ padding: 0%;
 .rules{
     background-color: rgb(0, 0, 0, 0.4);
     min-width: 100%;
-    height: 800px;
+    height: auto;
     justify-content: center;
     padding-top: 120px;
     margin-top: 80px;
+    padding-bottom: 120px;
 }
 
 .rule1 {
@@ -580,7 +596,7 @@ padding: 0%;
     transform: rotate(180deg) translateY(6px);
   }
   
-  .info__headline5 {
+.info__headline5 {
     display: block;
     margin-bottom: 15px;
     user-select: none;
@@ -588,20 +604,55 @@ padding: 0%;
     cursor: pointer;
   }
   
-  .info__headline5 p{
+.info__headline5 p{
     font-family: "Jura";
     color: white;
     text-decoration: none;
     font-size: 24px;
   }
 
-  .info__headline5:hover {
+.info__headline5:hover {
     text-decoration: underline;
   } 
 
-  .podval{
+.podval{
     width: 100%;
-    height: 244px;
     background-color: rgb(14, 14, 14);
     margin-top: 100px;
+    padding-top: 55px;
+    padding-bottom: 50px;
+    display: flex;
   }
+.podval-img{
+  margin-left: 55px;
+}
+.text-podv-left{
+  font-family: "Jura";
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.icons{
+  gap: 30px;
+  display: flex;
+  margin-top: 55px;
+}
+.cont-podv{
+  margin-left: 1000px;
+  display: flex;
+  gap: 40px;
+}
+
+.num{
+  text-align: right;
+  justify-content: right;
+  font-family: "Jura";
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 65px;
+  
+}
