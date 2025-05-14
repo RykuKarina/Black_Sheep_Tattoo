@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/фон.png);
+    background-image: url(../img/2.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0%;
@@ -13,158 +13,52 @@ body {
     font-family: 'Kodchasan-Regular';
     src: url(../fonts/Kodchasan-Regular.ttf);
 }
-.top{
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    }
+
 .header{
-background-color: rgb(22, 22, 22);
-top: 0;
-left: 0;
-right: 0;
-min-width: 100%;
-height: 85px;
-display: flex;
-position: fixed;
-justify-content: baseline;
-align-items: center;
-}
-.nav{
-    width:auto;
-    margin-right: 200px;
-}
-.nav a:hover{
-    color: rgb(216, 0, 126);
-    transition: color 0.5s ease;
-}
-.nav a {
-    word-spacing: 50px;
-    font-style: normal;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-family: 'Jura';
-}
-.logo{
-    text-align: left;
-   
-    margin-right: 450px;
-}
-.logo img 
-{
-height: 80px;
-width: 80px;
-margin: 0 50px;
-position: relative;
-}
-.section1{  
-    padding-top: 300px;
-    padding-left: 30px;
-    height: inherit;
-    padding-right: 0px;
-}
-.white-text {
-    font-family: 'Kodchasan-Regular';
-    font-style: normal;
-    font-size: 150px;
-    text-align: left; 
-    margin: 0;
-    height: fit-content;
-    color: white;
-}
-.pink-text {
-    font-family: 'Kodchasan-Regular';
-    font-style: normal;
-    font-size: 150px;
-    text-align: left; 
-    margin: 0;
-    height: fit-content;
-    color: rgb(216, 0, 126);
-}
-.section1 img{
-    float: right;
-    text-align: right; 
-    margin-top: -250px;
-    padding-right: -50px;
-}
-.white-text2 {
-    font-family: 'Jura';
-    font-style: normal;
-    font-size: 30px;
-    text-align: center; 
-    align-items: center;
-    height: fit-content;
-    color: white;
-    justify-content: center;
-}
-.pink-text2 {
-    font-family: 'Jura';
-    font-style: normal;
-    font-size: 30px;
-    text-align: center; 
-    margin: 0;
-    height: fit-content;
-    color: rgb(216, 0, 126);
-}
-.section2{
-    text-align: center;
-    margin-top: 350px;
-}
-.info{
-    margin-left: 227px;
-    margin-right: 227px;
-    margin-top: 300px;
-    background-color: rgb(0, 0, 0, 0.4);
-    width: 1466px;
-    height: 580px;
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-}
-.img-info {
-    margin-top: 4px;
-    width: 456px;
-}
-.info-text{
-    padding-top: 50px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 40px;
-}
-.text-info1{
-    font-family: 'Jura';
-    font-style: normal;
-    font-size: 32px;
-    text-align: left; 
-    height: auto;
-    color: white;
-    justify-content: left;
-    margin: 0;
-}
-.text-info2 {
-    font-family: 'Jura';
-    font-style: normal;
-    font-size: 32px;
-    text-align: left; 
-    height: auto;
-    color:  rgb(216, 0, 126);
-    justify-content: left;
-    margin: 0;
-}
-.text-info3{
-    font-family: 'Jura';
-    font-style: normal;
-    font-size: 20px;
-    text-align: left; 
-    height: fit-content;
-    color: white;
-    justify-content: left;
-    margin: 0;
-}
-.info2 {
+  background-color: rgb(22, 22, 22);
+  top: 0;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+  height: 85px;
+  display: flex;
+  position: fixed;
+  justify-content: baseline;
+  align-items: center;
+  }
+  .nav{
+      width:auto;
+      margin-right: 200px;
+  }
+  .nav a:hover{
+      color: rgb(216, 0, 126);
+      transition: color 0.5s ease;
+  }
+  .nav a {
+      word-spacing: 50px;
+      font-style: normal;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 2px;
+      font-family: 'Jura';
+  }
+  .logo{
+      text-align: left;
+      margin-right: 450px;
+  }
+  .logo img 
+  {
+  height: 80px;
+  width: 80px;
+  margin: 0 50px;
+  position: relative;
+  }
+  
+    
+
+
+  .text {
     font-family: 'Jura';
     display: flex;
     font-style: normal;
@@ -175,125 +69,15 @@ position: relative;
     margin: 0;
     gap: 10px; 
     margin-top: 100px;
-}
-.info-pink {
+  }
+  .info-pink{
     color: rgb(216, 0, 126);
-}
-.info3{
-    background-color: rgb(0, 0, 0, 0.4);
-    min-width: 100%;
-    height: 634px;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    padding-top: 68px;
-    }
-.img1{
-    border: 2px solid rgb(216, 0, 126);      
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 535px;
-    text-align: center; 
-    
-}
+  }
+  
 
-.img1 img{
-  transition: transform 0.2s;
-}
-.img1 img:hover{
-  transform: scale(1.10);
-}
-.text-img1{
-    padding-top: 15px;
-    font-family: 'Jura';
-    display: flex;
-    font-style: normal;
-    font-size: 24px;
-    text-align: center; 
-    color: rgb(216, 0, 126);
-    justify-content: center;
-    margin: 0;
-    gap: 10px; 
-}
-.text-img1-white{
-    color: white;
-}
-.img2{
-    border: 2px solid rgb(216, 0, 126);      
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 535px;
-    text-align: center;
-}
 
-.img2 img{
-  transition: transform 0.2s;
-}
-.img2 img:hover{
-  transform: scale(1.10);
-}
-.text-img2{
-    padding-top: 15px;
-    font-family: 'Jura';
-    display: flex;
-    font-style: normal;
-    font-size: 24px;
-    text-align: center; 
-    color: rgb(216, 0, 126);
-    justify-content: center;
-    margin: 0;
-    gap: 10px;   
-}
-.text-img2-white{
-    color: white;
-}
-.img3{
-    border: 2px solid rgb(216, 0, 126);      
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 535px;
-    text-align: center;
-}
-.img3 img{
-  transition: transform 0.2s;
-}
-.img3 img:hover{
-  transform: scale(1.10);
-}
-.text-img3{
-    padding-top: 15px;
-    font-family: 'Jura';
-    display: flex;
-    font-style: normal;
-    font-size: 24px;
-    text-align: center; 
-    color: white;
-    justify-content: center;
-    margin: 0;
-    gap: 10px;   
-}
-.text-img3-pink{
-    color: rgb(216, 0, 126);
-}
-.rules-text{
-    padding-top: 25px;
-    font-family: 'Jura';
-    font-style: normal;
-    font-size: 24px;
-    text-align: center; 
-    color: white;
-    justify-content: center;
-    margin: 0;
-}
-.rules-pink{
-    color:  rgb(216, 0, 126);
-    font-size: 48px;
-}
 
-.rules{
+  .questions{
     background-color: rgb(0, 0, 0, 0.4);
     min-width: 100%;
     height: auto;
@@ -303,11 +87,12 @@ position: relative;
     padding-bottom: 120px;
 }
 
-.rule1 {
+.question {
     border: 2px solid rgb(216, 0, 126);    
     padding: 10px 25px;
     margin-left: 227px;
     margin-right: 227px;
+    margin-top: 20px;
   }
   
   .info__switch {
@@ -334,7 +119,7 @@ position: relative;
     content: "";
     position: absolute;
     left: -18px;
-    top: 4px;
+    top: 2px;
     border-bottom-color: transparent;
     border-right-color: transparent;
     border-left-color: transparent;
@@ -367,13 +152,7 @@ position: relative;
 
 
 
-  .rule2 {
-    border: 2px solid rgb(216, 0, 126);    
-    padding: 10px 25px;
-    margin-left: 227px;
-    margin-right: 227px;
-    margin-top: 40px;
-  }
+ 
   
   .info__switch2 {
     display: none;
@@ -429,13 +208,7 @@ position: relative;
     text-decoration: underline;
   }
 
-  .rule3 {
-    border: 2px solid rgb(216, 0, 126);    
-    padding: 10px 25px;
-    margin-left: 227px;
-    margin-right: 227px;
-    margin-top: 40px;
-  }
+ 
   
   .info__switch3 {
     display: none;
@@ -491,13 +264,7 @@ position: relative;
     text-decoration: underline;
   }
 
-  .rule4 {
-    border: 2px solid rgb(216, 0, 126);    
-    padding: 10px 25px;
-    margin-left: 227px;
-    margin-right: 227px;
-    margin-top: 40px;
-  }
+  
   
   .info__switch4 {
     display: none;
@@ -553,13 +320,7 @@ position: relative;
     text-decoration: underline;
   }
 
-  .rule5 {
-    border: 2px solid rgb(216, 0, 126);    
-    padding: 10px 25px;
-    margin-left: 227px;
-    margin-right: 227px;
-    margin-top: 40px;
-  }
+ 
   
   .info__switch5 {
     display: none;
@@ -614,6 +375,8 @@ position: relative;
 .info__headline5:hover {
     text-decoration: underline;
   } 
+
+
   .podval{
     width: 100%;
     background-color: rgb(14, 14, 14);

@@ -165,44 +165,53 @@ body {
     font-size: 24px;
 }
 
+
 .podval{
-  width: 100%;
-  background-color: rgb(14, 14, 14);
-  margin-top: 100px;
-  padding-top: 55px;
-  padding-bottom: 50px;
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    margin-top: 100px;
+    padding-top: 55px;
+    padding-bottom: 50px;
+    display: flex;
+  }
+  .podval-img{
+  margin-left: 55px;
+  }
+  .two-column-list {
+    margin-top: 40px;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .two-column-list a {
+    font-family: "Jura";
+  color: white;
+  text-decoration: none;
+  }
+  
+  
+  .icons{
+  gap: 28px;
   display: flex;
-}
-.podval-img{
-margin-left: 55px;
-}
-.text-podv-left{
-font-family: "Jura";
-color: white;
-text-decoration: none;
-font-size: 14px;
-margin-left: 40px;
-margin-top: 50px;
-}
-
-.icons{
-gap: 30px;
-display: flex;
-margin-top: 55px;
-}
-.cont-podv{
-margin-left: 1000px;
-display: flex;
-gap: 40px;
-}
-
-.num{
-text-align: right;
-justify-content: right;
-font-family: "Jura";
-color: white;
-text-decoration: none;
-font-size: 18px;
-margin-top: 65px;
-
-}
+  margin-top: 70px;
+  }
+  .cont-podv{
+  margin-left: 990px;
+  display: flex;
+  gap: 40px;
+  }
+  
+  .num{
+  text-align: right;
+  justify-content: right;
+  font-family: "Jura";
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 65px;
+  
+  }

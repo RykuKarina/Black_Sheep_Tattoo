@@ -58,104 +58,124 @@ body {
   position: relative;
   }
   
-
-
-  .masters-text {
-  font-family: 'Jura';
+.info{
+  width: 100%;
+  height: 700px;
+  margin-top: 200px;
+  background-color:  rgb(0, 0, 0, 0.4);
   display: flex;
-  font-style: normal;
-  font-size: 48px;
-  text-align: center; 
-  color: white;
-  justify-content: center;
-  margin: 0;
-  gap: 10px; 
-  margin-top: 100px;
-}
-.info-pink{
-  color: rgb(216, 0, 126);
+  align-items: center;
+  margin-bottom: 120px;
 }
 
-.masters{
-  column-count: 3;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1215px;
-  margin-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-
-}
-
-.master{
-  background-color: rgb(0, 0, 0, 0.4);
-  height: 740px;
+.info img{
+  height: 516px;
   width: 383px;
-  justify-content: center;
-  margin-bottom: 60px;
-  text-align: center;
-}
-.master img{
-  transition: transform 0.2s;
-}
-.master img:hover{
-  transform: scale(1.10);
+  margin-left: 165px;
+  padding: 10px;
+  border: 2px solid rgb(216, 0, 126); 
 }
 
-.text-img1{
-  color: white;
-  font-size: 40px;
-  font-family: 'Jura-bold';
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  .factor-item {
+    margin-left: 60px;
 }
 
-.text-img2{
-  color: white;
-  font-size: 16px;
-  font-family: 'Jura';
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 50px;
+.factor-name {
+    color: rgb(216, 0, 126); 
+    font-family: "Jura";
+    font-size: 80px;
 }
 
-.button {
+.factor-description {
+    color: white;
+    font-family: "Jura";
+    font-size: 24px;
+}
+
+.factor-name1{
+  color: rgb(216, 0, 126); 
+  font-family: "Jura";
+  font-size: 24px;
+}
+
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -2px; /* Убираем отступы между изображениями */
+}
+
+.gallery-item {
+  width: 25%; /* 4 изображения в строке */
+  padding: 2px; /* Минимальный отступ */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* Стили для модального окна */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  overflow: auto;
+}
+
+.modal-content {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
-  text-decoration: none;
-  border: 0;
-  background: rgb(216, 0, 126);
-  color: #fff;
-  font-size: 32px;
-  font-family: 'Jura';
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-bottom: 10px;
-
+  height: 100%;
 }
 
-.button:hover {
-  background: #ff55be;
+.modal-img {
+  width: auto;
+  height: 800px;
+  object-fit: contain;
 }
 
-.button:focus {
-  outline: none;
-  
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s;
+}
 
-
-
+.next {
+  right: 0;
+}
 
 .podval{
   width: 100%;
