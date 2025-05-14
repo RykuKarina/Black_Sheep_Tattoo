@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виолетта</title>
+    <link rel="stylesheet" href="src\css\style-master.css">
+   
+
+</head>
+
+<body>
+    
+    
+    
+
+    <div class="header"> 
+    
+      
+        <div class="logo">
+            <a href="index.html"><img src="src\img\логоБ.png" /></a>
+        </div>
+
+            <nav class="nav">
+                
+                    <a href="masters.html">Мастера </a>
+                    <a href="services.html">Услуги </a>
+                    <a href="action.html">Акции </a>
+                    <a href="faq.html">Вопросы </a>
+                    <a href="contacts.html">Контакты </a>
+                
+            </nav>
+    </div>
+
+    <main>
+       
+
+        <div class="info">
+            <img src="src\img\vio.png">
+            <div class="factor-item">
+               
+                 <span class="factor-name">Виолетта<br><br></span>
+             
+             
+                <span class="factor-description">Лучик Солнца<br><br>Родом из Краснодарского края, город Новороссийск.<br>Сама с Мурманска, уехала жить на юга, на данный момент реализует свое творчество в Санкт-Петербурге.<br><br>Рисует с детства, всегда видела себя в творческой профессии, по образованию графический дизайнер по рекламе. На данный момент работает тату-мастером уже 5 лет.<br><br></span>
+                 <span class="factor-name1">Меня можно найти:<br></span><span class="factor-description">Тгк - https://t.me/RayOfSunshine<br>
+Группа в ВК - https://vk.com/RayOfSunshine<br>
+Инста - RayOfSunshine<br><br></span>
+               </div>
+        </div>
+ <div class="gallery-container">
+            <!-- Изображение 1 -->
+            <div class="gallery-item">
+                <img src="src\img\vio1.png" class="gallery-img" onclick="openModal(1)">
+            </div>
+            
+            <!-- Изображение 2 -->
+            <div class="gallery-item">
+                <img src="src\img\vio2.png" class="gallery-img" onclick="openModal(2)">
+            </div>
+            
+            <!-- Добавьте остальные 6 изображений аналогично -->
+            <!-- Изображение 3 -->
+            <div class="gallery-item">
+                <img src="src\img\vio3.png" class="gallery-img" onclick="openModal(3)">
+            </div>
+            
+            <!-- Изображение 4 -->
+            <div class="gallery-item">
+                <img src="src\img\vio4.png" class="gallery-img" onclick="openModal(4)">
+            </div>
+            
+            <!-- Изображение 5 -->
+            <div class="gallery-item">
+                <img src="src\img\vio5.png" class="gallery-img" onclick="openModal(5)">
+            </div>
+            
+            <!-- Изображение 6 -->
+            <div class="gallery-item">
+                <img src="src\img\vio6.png" class="gallery-img" onclick="openModal(6)">
+            </div>
+            
+            <!-- Изображение 7 -->
+            <div class="gallery-item">
+                <img src="src\img\vio7.png" class="gallery-img" onclick="openModal(7)">
+            </div>
+            
+            <!-- Изображение 8 -->
+            <div class="gallery-item">
+                <img src="src\img\vio8.png" class="gallery-img" onclick="openModal(8)">
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="modal-content">
+                <img id="modalImage" class="modal-img" alt="gallery-img">
+            </div>
+        </div>
+        <script>
+            // Массив с путями к изображениям
+            const images = [
+                'src/img/vio1.png', 
+                'src/img/vio2.png',
+                'src/img/vio3.png',
+                'src/img/vio4.png',
+                'src/img/vio5.png',
+                'src/img/vio6.png',
+                'src/img/vio7.png',
+                'src/img/vio8.png',
+            ];
+            
+            let currentSlide = 1;
+            
+            function openModal(n) {
+                currentSlide = n;
+                const modal = document.getElementById("myModal");
+                const modalImg = document.getElementById("modalImage");
+                
+                modal.style.display = "block";
+                modalImg.src = images[n-1];
+                modalImg.alt = "Image " + n;
+                
+                console.log("Opening image:", images[n-1]); // Для отладки
+            }
+            
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+            
+            function plusSlides(n) {
+                currentSlide += n;
+                
+                // Зацикливание галереи
+                if (currentSlide > images.length) {
+                    currentSlide = 1;
+                }
+                if (currentSlide < 1) {
+                    currentSlide = images.length;
+                }
+                
+                document.getElementById("modalImage").src = images[currentSlide-1];
+                console.log("Current slide:", currentSlide); // Для отладки
+            }
+            
+            // Закрытие по клику вне изображения
+            window.onclick = function(event) {
+                const modal = document.getElementById("myModal");
+                if (event.target == modal) {
+                    closeModal();
+                }
+            }
+            
+            // Управление клавиатурой
+            document.onkeydown = function(e) {
+                e = e || window.event;
+                if (e.keyCode == 27) { // ESC
+                    closeModal();
+                } else if (e.keyCode == 37) { // Стрелка влево
+                    plusSlides(-1);
+                } else if (e.keyCode == 39) { // Стрелка вправо
+                    plusSlides(1);
+                }
+            };
+        </script>
+    
+
+    
+
+
+        <div class="podval">
+            <div class="podval-img">
+           <img src="src\img\logoPodval.png">
+          </div>
+          
+          <ul class="two-column-list">
+           <div class="column">
+               <li><a href="index.html">Главная</a></li>
+               <li><a href="action.html">Акции</a></li>
+               <li><a href="contacts.html">Контакты</a></li>
+           </div>
+           <div class="column">
+               <li><a href="masters.html">Мастера</a></li>
+               <li><a href="services.html">Услуги и цены</a></li>
+               <li><a href="faq.html">Вопросы</a></li>
+           </div>
+          </ul>
+          
+          <div class="cont-podv">
+           <div class="icons">
+             <a href="https://t.me/BlackSheepTattooSPb"><img src="src\icons\icon-TG.png" /></a>
+             <a href="https://vk.com/club230428263"><img src="src\icons\icon-VK.png" /></a>
+             <a href="https://vk.com/club230428263"><img src="src\icons\icon-whatsapp.png" /></a>
+           </div>
+           <div class="num">
+             <p>8(999)333-22-11</p>
+           </div>
+          </div>
+          
+          </div>
+       
+    </main>
+</body>
